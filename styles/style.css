@@ -75,11 +75,28 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 .cat-spin{
     margin-top: 30px;
     margin-bottom: 20px;
     width: 150px;
+}
+footer:hover>.stick-man{
+    display: inline;
+}
+.stick-man{
+    display: none;
+    position: absolute;
+}
+#stick-man-0{
+    left: 40%;
+    top: 20%;
+    width: 100px;
+}
+#stick-man-1{
+    left:55%;
+    width: 70px;
 }
 @media only screen and (max-width:425px){
     main{
