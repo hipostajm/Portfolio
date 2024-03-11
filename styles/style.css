@@ -37,12 +37,17 @@ main{
     display: flex;
     flex-direction: column;
 }
-main > span{
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.info > span{
     color: var(--span-color);
     margin: 0 60px;
     flex-wrap: wrap;
 }
-main > span::before{
+.info > span::before{
     content: '#> ';
 }
 .comment{
@@ -103,7 +108,7 @@ footer:hover .stick-man{
         align-items: center;
         text-align: center;
     }
-    main>span::before{
+    .info>span::before{
         content: '';
     }
 }
@@ -112,7 +117,7 @@ footer:hover .stick-man{
     main>h2{
         margin-left:15px;
     }
-    main>span{
+    .info>span{
         margin-left: 75px;
     }
     footer:hover #stick-man-0{
