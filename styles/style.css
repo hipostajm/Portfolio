@@ -27,11 +27,12 @@ header{
     background-color: var(--header-footer-color);
     font-family: 'Menlo';
     width: 100vw;
+    height: 8rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    line-height: 2.3rem;
+    line-height: 2.9rem;
     letter-spacing: 5px;
     text-align: center;
 }
