@@ -25,12 +25,11 @@ body{
 header{
     font-family: 'Nunito';
     background-color: var(--header-footer-color);
-    height: 4rem;
+    height: 6rem;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 main{
     max-width: 1000px;
