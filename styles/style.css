@@ -109,6 +109,9 @@ footer:hover .stick-man{
         align-items: center;
         text-align: center;
     }
+    main>h2::after{
+        content: "";
+    }
     .info>span::before{
         content: '';
     }
