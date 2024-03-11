@@ -109,9 +109,6 @@ footer:hover .stick-man{
         align-items: center;
         text-align: center;
     }
-    .info{
-        width: 90%;
-    }
     main>h2::after{
         content: "";
     }
