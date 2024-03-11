@@ -82,7 +82,7 @@ footer{
     margin-bottom: 20px;
     width: 150px;
 }
-footer:hover>.stick-man{
+footer:hover .stick-man{
     display: inline;
 }
 .stick-man{
@@ -114,5 +114,8 @@ footer:hover>.stick-man{
     }
     main>span{
         margin-left: 75px;
+    }
+    footer:hover #stick-man-0{
+        display: none;
     }
 }
