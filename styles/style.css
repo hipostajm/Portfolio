@@ -51,13 +51,13 @@ main{
 .info > span::before{
     content: '#> ';
 }
-.comment{
+.info > .comment{
     color: var(--commnet-color);
 }
-.comment::before{
+.info > .comment::before{
     content: '//';
 }
-.comment>a{
+.info > .comment>a{
     color: var(--comment-link-color);
 }
 a{
