@@ -37,27 +37,21 @@ main{
     display: flex;
     flex-direction: column;
 }
-.info{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.info > span{
+main > span{
     color: var(--span-color);
     margin: 0 60px;
     flex-wrap: wrap;
 }
-.info > span::before{
+main > span::before{
     content: '#> ';
 }
-.info > .comment{
+.comment{
     color: var(--commnet-color);
 }
-.info > .comment::before{
+.comment::before{
     content: '//';
 }
-.info > .comment>a{
+.comment>a{
     color: var(--comment-link-color);
 }
 a{
@@ -105,14 +99,11 @@ footer:hover .stick-man{
     width: 70px;
 }
 @media only screen and (max-width:425px){
-    main, .info{
+    main{
         align-items: center;
         text-align: center;
     }
-    main>h2::after{
-        content: "";
-    }
-    .info>span::before{
+    main>span::before{
         content: '';
     }
 }
@@ -121,7 +112,7 @@ footer:hover .stick-man{
     main>h2{
         margin-left:15px;
     }
-    .info>span{
+    main>span{
         margin-left: 75px;
     }
     footer:hover #stick-man-0{
