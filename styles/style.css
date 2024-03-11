@@ -24,10 +24,10 @@ body{
     gap: 30px;
 }
 header{
-    background-color: var(--header-footer-color);
+    background: var(--header-footer-color);
     font-family: 'Menlo';
     width: 100vw;
-    height: 8rem;
+    height: 9rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,6 +35,9 @@ header{
     line-height: 3rem;
     letter-spacing: 5px;
     text-align: center;
+}
+header>h1{
+    text-shadow: 0 0 3px whitesmoke;
 }
 main{
     max-width: 1000px;
