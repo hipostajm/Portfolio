@@ -120,6 +120,15 @@ footer:hover .stick-man{
     main>h2::after{
         content: '';
     }
+    main>h2{
+        margin-left:0;
+    }
+    main>span{
+        margin-left: 0  ;
+    }
+    header>h1{
+        margin: 0;
+    }
 }
 
 @media only screen  and (max-width:1024px) {
