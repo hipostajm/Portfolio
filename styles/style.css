@@ -2,13 +2,15 @@
 @font-face{font-family:'Menlo';font-style:normal;font-weight:400;src:local('Menlo'), url(../assets/Menlo-Regular.woff) }
 
 :root{
-    --body-color:#141312;
-    --header-footer-color:#1c1c1c;
+    --body-color:#0d0d0d;
+    --header-footer-color:rgb(12, 12, 12);
     --h2-color:#8efc5f;
     --span-color:#f1f1f1;
     --link-color:#b168b8;
     --commnet-color:#b1b1b1;
     --comment-link-color:#903c96;
+    --snow-fall-color: #ffffff;
+    --snow-fall-size:7px;
 }
 
 body{
@@ -24,10 +26,9 @@ body{
     gap: 30px;
 }
 header{
-    background: var(--header-footer-color);
     font-family: 'Menlo';
     width: 100vw;
-    height: 9rem;
+    height: 9.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +59,7 @@ main > span::before{
     color: var(--commnet-color);
 }
 .comment::before{
-    content: '//';
+    content: '// ';
 }
 .comment>a{
     color: var(--comment-link-color);
@@ -114,6 +115,9 @@ footer:hover .stick-man{
         text-align: center;
     }
     main>span::before{
+        content: '';
+    }
+    main>h2::after{
         content: '';
     }
 }
