@@ -1,14 +1,18 @@
+@font-face{font-family:'lt binary neue';font-style:normal;font-weight:400;src:local('LT Binary Neue'), url(../assets/LTBinaryNeue.woff) }
+
 :root{
     --body-color:#141312;
     --header-footer-color:#1c1c1c;
     --h2-color:#8efc5f;
     --span-color:#f1f1f1;
     --link-color:#b168b8;
+    --commnet-color:#b1b1b1;
+    --comment-link-color:#903c96;
 }
 
 body{
     background-color: var(--body-color);
-    font-family: "Nunito", sans-serif;
+    font-family: 'LT Binary Neue', "Nunito";
     color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -19,6 +23,7 @@ body{
     gap: 30px;
 }
 header{
+    font-family: 'Nunito';
     background-color: var(--header-footer-color);
     height: 4rem;
     width: 100vw;
@@ -41,8 +46,18 @@ main > span{
 main > span::before{
     content: '#> ';
 }
+.comment{
+    color: var(--commnet-color);
+}
+.comment::before{
+    content: '//';
+}
+.comment>a{
+    color: var(--comment-link-color);
+}
 a{
     color: var(--link-color);
+    text-shadow: 0 0 10px var(--comment-link-color);
 }
 main>h2{
     color: var(--h2-color);
@@ -50,6 +65,10 @@ main>h2{
     flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 10px;
+    text-shadow: 0 0 3px var(--h2-color);
+}
+main>h2::after{
+    content: ':';
 }
 footer{
     width: 100vw;
@@ -68,6 +87,9 @@ footer{
         align-items: center;
         text-align: center;
     }
+    main>span::before{
+        content: '';
+    }
 }
 
 @media only screen  and (max-width:1024px) {
@@ -76,8 +98,5 @@ footer{
     }
     main>span{
         margin-left: 75px;
-    }
-    main>span::before{
-        content: '';
     }
 }
