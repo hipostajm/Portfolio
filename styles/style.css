@@ -10,7 +10,6 @@
   font-weight: 400;
   src: local("Menlo"), url(../assets/Menlo-Regular.woff);
 }
-
 :root {
   --body-color: #0d0d0d;
   --header-footer-color: rgb(12, 12, 12);
@@ -46,9 +45,10 @@ header {
   line-height: 3rem;
   letter-spacing: 5px;
   text-align: center;
+  color: whitesmoke;
 }
 header > h1 {
-  text-shadow: 0 0 3px whitesmoke;
+  text-shadow: 0 0 3px currentColor;
 }
 main {
   max-width: 1000px;
@@ -76,7 +76,7 @@ main > span::before {
 }
 a {
   color: var(--link-color);
-  text-shadow: 0 0 10px var(--comment-link-color);
+  text-shadow: 0 0 10px currentColor;
 }
 main > h2 {
   color: var(--h2-color);
@@ -84,7 +84,7 @@ main > h2 {
   flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 10px;
-  text-shadow: 0 0 3px var(--h2-color);
+  text-shadow: 0 0 3px currentColor;
   font-size: 1.2rem;
 }
 main > h2::after {
