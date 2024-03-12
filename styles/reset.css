@@ -1,15 +1,15 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  body::-webkit-scrollbar {
-    display: none;
-  }
-  ul {
-    list-style-type: none;
-  }
-  a {
-    cursor: pointer;
-    color: inherit;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  cursor: pointer;
+  color: inherit;
+}
