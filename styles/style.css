@@ -1,144 +1,155 @@
-@font-face{font-family:'lt binary neue';font-style:normal;font-weight:400;src:local('LT Binary Neue'), url(../assets/LTBinaryNeue.woff) }
-@font-face{font-family:'Menlo';font-style:normal;font-weight:400;src:local('Menlo'), url(../assets/Menlo-Regular.woff) }
-
-:root{
-    --body-color:#0d0d0d;
-    --header-footer-color:rgb(12, 12, 12);
-    --h2-color:#8efc5f;
-    --span-color:#f1f1f1;
-    --link-color:#b168b8;
-    --commnet-color:#b1b1b1;
-    --comment-link-color:#903c96;
-    --snow-fall-color: #ffffff;
-    --snow-fall-size:7px;
+@font-face {
+  font-family: "lt binary neue";
+  font-style: normal;
+  font-weight: 400;
+  src: local("LT Binary Neue"), url(../assets/LTBinaryNeue.woff);
+}
+@font-face {
+  font-family: "Menlo";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Menlo"), url(../assets/Menlo-Regular.woff);
 }
 
-body{
-    background-color: var(--body-color);
-    font-family: 'LT Binary Neue','Menlo', "Nunito";
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 100vw;
-    min-height: 100vh;
-    gap: 30px;
+:root {
+  --body-color: #0d0d0d;
+  --header-footer-color: rgb(12, 12, 12);
+  --h2-color: #8efc5f;
+  --span-color: #f1f1f1;
+  --link-color: #b168b8;
+  --commnet-color: #b1b1b1;
+  --comment-link-color: #903c96;
+  --snow-fall-color: #ffffff;
+  --snow-fall-size: 7px;
 }
-header{
-    font-family: 'Menlo';
-    width: 100vw;
-    height: 9.3rem;
-    display: flex;
+
+body {
+  background-color: var(--body-color);
+  font-family: "LT Binary Neue", "Menlo", "Nunito";
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100vw;
+  min-height: 100vh;
+  gap: 30px;
+}
+header {
+  font-family: "Menlo";
+  width: 100vw;
+  height: 9.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 3rem;
+  letter-spacing: 5px;
+  text-align: center;
+}
+header > h1 {
+  text-shadow: 0 0 3px whitesmoke;
+}
+main {
+  max-width: 1000px;
+  min-width: min-content;
+  display: flex;
+  flex-direction: column;
+}
+main > span {
+  color: var(--span-color);
+  margin: 0 60px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+main > span::before {
+  content: "#> ";
+}
+.comment {
+  color: var(--commnet-color);
+}
+.comment::before {
+  content: "// ";
+}
+.comment > a {
+  color: var(--comment-link-color);
+}
+a {
+  color: var(--link-color);
+  text-shadow: 0 0 10px var(--comment-link-color);
+}
+main > h2 {
+  color: var(--h2-color);
+  margin-left: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 3px var(--h2-color);
+  font-size: 1.2rem;
+}
+main > h2::after {
+  content: ":";
+}
+footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.cat-spin {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 150px;
+}
+footer:hover .stick-man {
+  display: inline;
+}
+.stick-man {
+  display: none;
+  position: absolute;
+}
+#stick-man-0 {
+  left: 40%;
+  top: 20%;
+  width: 100px;
+}
+#stick-man-1 {
+  left: 55%;
+  width: 70px;
+}
+@media only screen and (max-width: 425px) {
+  main {
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    line-height: 3rem;
-    letter-spacing: 5px;
     text-align: center;
-}
-header>h1{
-    text-shadow: 0 0 3px whitesmoke;
-}
-main{
-    max-width: 1000px;
-    min-width: min-content;
-    display: flex;
-    flex-direction: column;
-}
-main > span{
-    color: var(--span-color);
-    margin: 0 60px;
-    flex-wrap: wrap;
-    font-size: .9rem;
-}
-main > span::before{
-    content: '#> ';
-}
-.comment{
-    color: var(--commnet-color);
-}
-.comment::before{
-    content: '// ';
-}
-.comment>a{
-    color: var(--comment-link-color);
-}
-a{
-    color: var(--link-color);
-    text-shadow: 0 0 10px var(--comment-link-color);
-}
-main>h2{
-    color: var(--h2-color);
-    margin-left: 30px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    text-shadow: 0 0 3px var(--h2-color);
-    font-size: 1.2rem;
-}
-main>h2::after{
-    content: ':';
-}
-footer{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
-.cat-spin{
-    margin-top: 30px;
-    margin-bottom: 20px;
-    width: 150px;
-}
-footer:hover .stick-man{
-    display: inline;
-}
-.stick-man{
-    display: none;
-    position: absolute;
-}
-#stick-man-0{
-    left: 40%;
-    top: 20%;
-    width: 100px;
-}
-#stick-man-1{
-    left:55%;
-    width: 70px;
-}
-@media only screen and (max-width:425px){
-    main{
-        align-items: center;
-        text-align: center;
-    }
-    main>span::before{
-        content: '';
-    }
-    main>h2::after{
-        content: '';
-    }
-    main>h2{
-        margin-left:0;
-    }
-    main>span{
-        margin-left: 0  ;
-    }
-    header>h1{
-        margin: 0;
-    }
+    gap: 10px;
+  }
+  main > span::before {
+    content: "";
+  }
+  main > h2::after {
+    content: "";
+  }
+  main > h2 {
+    margin: 0;
+  }
+  body > main > span {
+    margin: 0 20px;
+  }
+  header > h1 {
+    margin: 0;
+  }
 }
 
-@media only screen  and (max-width:1024px) {
-    main>h2{
-        margin-left:15px;
-    }
-    main>span{
-        margin-left: 75px;
-    }
-    footer:hover #stick-man-0{
-        display: none;
-    }
+@media only screen and (max-width: 1024px) {
+  main > h2 {
+    margin-left: 15px;
+  }
+  main > span {
+    margin-left: 75px;
+  }
+  footer:hover #stick-man-0 {
+    display: none;
+  }
 }
