@@ -10,6 +10,15 @@
   font-weight: 400;
   src: local("Menlo"), url(../assets/Menlo-Regular.woff);
 }
+@font-face {
+  font-family: "HalfLife2 V2";
+  src: url("https://db.onlinewebfonts.com/t/ed213e2afe054010bd21f62ae551874d.eot");
+  src: url("https://db.onlinewebfonts.com/t/ed213e2afe054010bd21f62ae551874d.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/ed213e2afe054010bd21f62ae551874d.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/ed213e2afe054010bd21f62ae551874d.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/ed213e2afe054010bd21f62ae551874d.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/ed213e2afe054010bd21f62ae551874d.svg#HalfLife2 V2")format("svg");
+}
 :root {
   --body-color: #0d0d0d;
   --header-footer-color: rgb(12, 12, 12);
@@ -97,6 +106,7 @@ footer {
   align-items: center;
   flex-direction: column;
   position: relative;
+  font-family: "HalfLife";
 }
 .cat-spin {
   margin-top: 30px;
