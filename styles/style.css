@@ -85,3 +85,9 @@ main > h1{
     width: 70vw;
   }
 }
+
+@media only screen and (max-width: 550px) {
+  main{
+    width: 90vw;
+  }
+}
