@@ -8,6 +8,12 @@
   --normal-text-font-size: 1.1rem;
 }
 
+html{
+  /* background-color: black; */
+  overscroll-behavior: none;
+}
+
+
 body {
   background-image: url("../assets/Star_BG.gif");
   display: flex;
